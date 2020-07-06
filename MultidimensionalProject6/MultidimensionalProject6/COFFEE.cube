@@ -1,0 +1,2049 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="62962ebb-ee14-41f7-8412-d8c434d113e1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>COFFEE 1</ID>
+  <Name>COFFEE</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="19" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="855" scrolltop="4529" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="22834" y="9499" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Species" left="28534" top="13160" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Species" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Farm" left="20" top="10597" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Farm" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Region" left="16765" top="12103" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3969" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000810f00009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Region" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Characteristics" left="14017" top="0" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3519" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000bf0d000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Characteristics" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Company" left="5420" top="10174" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3545" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d90d00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Company" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Countries" left="23134" top="12949" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Countries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Owner" left="11365" top="7401" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Owner" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="25834" top="13700" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Countries-Species]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="6" sourceattachpoint="12" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="28534" y="14099" />
+              <point x="27334" y="14099" />
+              <point x="27334" y="14100" />
+              <point x="26134" y="14100" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="-1593" top="4700" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="30427" height="9249" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_dbo_Species_dbo_Characteristics]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="10" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="28534" y="13549" />
+              <point x="-1293" y="13549" />
+              <point x="-1293" y="9080" />
+              <point x="17426" y="9080" />
+              <point x="17426" y="5000" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="2720" top="11349" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Farm-Company]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="2" sourceattachpoint="18" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="5420" y="11748" />
+              <point x="3020" y="11748" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="1121" top="4700" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="13855" height="6397" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_dbo_Farm_dbo_Characteristics]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="4" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1520" y="10597" />
+              <point x="1520" y="7799" />
+              <point x="14676" y="7799" />
+              <point x="14676" y="5000" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="20434" top="13701" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Region-Countries]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="12" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="23134" y="14100" />
+              <point x="20734" y="14100" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8665" top="11998" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="8400" height="2502" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Company-Region]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="5" sourceattachpoint="20" destattachpoint="21" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="16765" y="14100" />
+              <point x="12865" y="14100" />
+              <point x="12865" y="12298" />
+              <point x="8965" y="12298" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16576" top="4700" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="2573" height="7903" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_dbo_Region_dbo_Characteristics]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="6" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="18749" y="12103" />
+              <point x="18749" y="8552" />
+              <point x="16876" y="8552" />
+              <point x="16876" y="5000" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="6793" top="4700" logicalid="15" controlid="15" masterid="0" hint1="0" hint2="0" width="9283" height="5974" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_dbo_Company_dbo_Characteristics]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="4" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7192" y="10174" />
+              <point x="7192" y="7587" />
+              <point x="15776" y="7587" />
+              <point x="15776" y="5000" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="16026" top="4700" logicalid="16" controlid="16" masterid="0" hint1="0" hint2="0" width="9008" height="8749" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_dbo_Countries_dbo_Characteristics]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="4" sourceattachpoint="4" destattachpoint="9" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="24634" y="12949" />
+              <point x="24634" y="8975" />
+              <point x="16326" y="8975" />
+              <point x="16326" y="5000" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="12466" top="4700" logicalid="17" controlid="17" masterid="0" hint1="0" hint2="0" width="3060" height="3201" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_dbo_Owner_dbo_Characteristics]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="4" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12865" y="7401" />
+              <point x="12865" y="6201" />
+              <point x="15226" y="6201" />
+              <point x="15226" y="5000" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8665" top="8252" logicalid="18" controlid="18" masterid="0" hint1="0" hint2="0" width="3000" height="2796" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[Owner-Company]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="7" sourceattachpoint="15" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8965" y="10648" />
+              <point x="10165" y="10648" />
+              <point x="10165" y="8552" />
+              <point x="11365" y="8552" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>855</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>4529</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="32211d68-84c6-45ae-b85e-620433f86363">
+      <ID>Countries</ID>
+      <Name>Countries</Name>
+      <DimensionID>Countries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="06cd83e8-2f4a-43d4-a7b4-f1915223e2b1">
+          <AttributeID>Ctry Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="56f4b2be-39c5-48ef-818a-08d5aa9027ee">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="cd82c1da-2dbd-4b1f-83bf-3585163d1b4f">
+      <ID>Species</ID>
+      <Name>Species</Name>
+      <DimensionID>Species</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="046411a7-99d0-476c-bd6e-e968f43a7e8e">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9218dd78-0634-41b0-a902-69db3b0b03b4">
+      <ID>Farm</ID>
+      <Name>Farm</Name>
+      <DimensionID>Farm</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4caeb071-17cf-4f5c-80af-1b6f124bb268">
+          <AttributeID>Farm Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6c550635-2bcb-4c4c-9ab6-79aaf65fd160">
+          <AttributeID>Cmpny Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2bbf1549-e5fe-4721-9197-3cf97f5300f0">
+      <ID>Company</ID>
+      <Name>Company</Name>
+      <DimensionID>Company</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9a25a6bd-0998-47d7-9fc9-f419a6a430fa">
+          <AttributeID>Cmpny Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="255eb841-ebab-4ffb-a798-6b50fa65fb4c">
+          <AttributeID>Reg Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b602f9c7-86b0-4d74-b6a4-798177291426">
+      <ID>Owner</ID>
+      <Name>Owner</Name>
+      <DimensionID>Owner</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c0cb919d-6ef5-4de9-a3bb-eb344d7f9e7b">
+          <AttributeID>Owner Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9db65072-526c-417e-85cc-665a3d8df615">
+          <AttributeID>Cmpny Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="670e10dd-e4dc-4bce-ad71-2cb64bd14411">
+      <ID>Region</ID>
+      <Name>Region</Name>
+      <DimensionID>Region</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="420ecc32-dd2b-4fab-93c2-69104daeab95">
+          <AttributeID>Reg Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="49248d97-59ba-45e3-891d-4facf5834e82">
+          <AttributeID>Ctry Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6ced507d-1978-4bbd-9d33-f06b62eee533">
+      <ID>Species 1</ID>
+      <Name>Species 1</Name>
+      <DimensionID>Species 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="589bcb52-c99b-4eae-85de-ff86501c517d">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7476b235-7532-4c76-8de3-2349a84ea9c6">
+      <ID>Countries - S</ID>
+      <Name>Countries - S</Name>
+      <DimensionID>Species 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3fa5a2cb-120f-4b05-871f-2f320e109300">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7a08b9ec-dd34-4ad2-8014-6606be64519e">
+      <ID>Company - Reg</ID>
+      <Name>Company - Reg</Name>
+      <DimensionID>Region</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a380cf36-cf36-4779-8cdd-05041c61b550">
+          <AttributeID>Reg Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="134c9c17-6ac2-4e89-b9e0-8141bd7a1637">
+          <AttributeID>Ctry Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6c2d18c7-6cba-4b95-85db-f01cfe0968f2">
+      <ID>Company - Reg - Ctry</ID>
+      <Name>Company - Reg - Ctry</Name>
+      <DimensionID>Countries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="071e23ab-1c28-4c28-b777-5af0d84a7e74">
+          <AttributeID>Ctry Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="de7a6d96-4efb-40c8-858f-0dcbc679c223">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="99785f1a-8606-4a67-8265-621117c662f7">
+      <ID>Company - Reg - Ctry - S</ID>
+      <Name>Company - Reg - Ctry - S</Name>
+      <DimensionID>Species</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a1e0ac09-dc5e-4686-ba71-35dcb0eec48b">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="efcb46a6-013c-40e3-9fd8-d6b5470f6c79">
+      <ID>Company - Reg - Ctry - S 1</ID>
+      <Name>Company - Reg - Ctry - S 1</Name>
+      <DimensionID>Species 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="340b454e-32d5-4991-8d90-8eae734654ad">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="db534057-a75f-49e0-a7a7-80c9bf0e9750">
+      <ID>Countries - S 1</ID>
+      <Name>Countries - S 1</Name>
+      <DimensionID>Species</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="cb2ff18c-18b9-4019-96b3-ce96b6daff5d">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="981d9017-074a-475a-b1e4-47abac183326">
+      <ID>Region - Ctry</ID>
+      <Name>Region - Ctry</Name>
+      <DimensionID>Countries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="eeb672ec-125f-41f5-b73a-03ae7bdb822c">
+          <AttributeID>Ctry Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c4e6b835-e7c6-4d64-ac2d-c93dc905a869">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="024079d1-ae6a-4033-b3ae-ef423bad6a2b">
+      <ID>Region - Ctry - S</ID>
+      <Name>Region - Ctry - S</Name>
+      <DimensionID>Species</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="746b15ac-a387-480c-bb40-334d17843337">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="4a3af782-5a9a-43ad-8842-e1b17ece3652">
+      <ID>Region - Ctry - S 1</ID>
+      <Name>Region - Ctry - S 1</Name>
+      <DimensionID>Species 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0c436078-86ae-4b65-9cc5-dc6bd3be891c">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="22242646-02ec-4ef7-8b09-9381413be0d2">
+      <ID>Farm - Cmpny</ID>
+      <Name>Farm - Cmpny</Name>
+      <DimensionID>Company</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0a70c7ee-e969-49de-a3d6-bd80a08b8fd5">
+          <AttributeID>Cmpny Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cb52c75a-f384-493f-b8c8-2b6037446165">
+          <AttributeID>Reg Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="47c144d0-de8c-4481-8194-ef646685eb04">
+      <ID>Farm - Cmpny - Reg</ID>
+      <Name>Farm - Cmpny - Reg</Name>
+      <DimensionID>Region</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="80eff6ef-1641-47f2-883d-569af895f860">
+          <AttributeID>Reg Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6a708661-a6d8-4911-b38b-cb0ddf0ac90f">
+          <AttributeID>Ctry Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="543d3b43-8e6f-4bba-8e39-42a5ae7f19dc">
+      <ID>Farm - Cmpny - Reg - Ctry</ID>
+      <Name>Farm - Cmpny - Reg - Ctry</Name>
+      <DimensionID>Countries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9f1fd5cf-a515-4ddd-b0a3-35e62790396f">
+          <AttributeID>Ctry Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fb42264f-9592-498f-bed2-a668917fd580">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b93ab3a3-e30e-4332-b17a-1bd82efde7da">
+      <ID>Farm - Cmpny - Reg - Ctry - S</ID>
+      <Name>Farm - Cmpny - Reg - Ctry - S</Name>
+      <DimensionID>Species</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4a396a6e-33ec-45ea-9a7c-7f78e8f59978">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="7e1d2947-02f6-4c5e-b0f4-3aeeb781541a">
+      <ID>Farm - Cmpny - Reg - Ctry - S 1</ID>
+      <Name>Farm - Cmpny - Reg - Ctry - S 1</Name>
+      <DimensionID>Species 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2c7b282d-9f31-48ec-b858-89ce3f57e53f">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6e2e2933-575f-4ca2-afc2-b4e9118e7929">
+      <ID>Owner - Cmpny</ID>
+      <Name>Owner - Cmpny</Name>
+      <DimensionID>Company</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6d00c9c6-1a3f-479a-9aee-65909c292301">
+          <AttributeID>Cmpny Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="012b2553-9f53-4775-9d68-6e7a163f04d9">
+          <AttributeID>Reg Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="20f8afba-31a4-4d9e-8566-334f830f8766">
+      <ID>Owner - Cmpny - Reg</ID>
+      <Name>Owner - Cmpny - Reg</Name>
+      <DimensionID>Region</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="93d017e0-8f89-4edf-9c32-639ccc72a74a">
+          <AttributeID>Reg Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="fe72ccfe-69ff-477f-a800-f4defbcafb0d">
+          <AttributeID>Ctry Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b730e8cb-01d5-439e-b2bf-f24cc157ef01">
+      <ID>Owner - Cmpny - Reg - Ctry</ID>
+      <Name>Owner - Cmpny - Reg - Ctry</Name>
+      <DimensionID>Countries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2657eb40-c168-41be-812c-7f3158fed270">
+          <AttributeID>Ctry Id</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1f1020a4-61ac-4de7-a1e2-d638cc5c1f8b">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2c1fd4af-d052-42cc-8338-15090214d3f9">
+      <ID>Owner - Cmpny - Reg - Ctry - S</ID>
+      <Name>Owner - Cmpny - Reg - Ctry - S</Name>
+      <DimensionID>Species</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9d74cb71-367d-4581-8c8a-c522b5d098e7">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b139587e-19dc-4a15-aab9-0205e2fe0f9c">
+      <ID>Owner - Cmpny - Reg - Ctry - S 1</ID>
+      <Name>Owner - Cmpny - Reg - Ctry - S 1</Name>
+      <DimensionID>Species 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7bcce9ed-eb47-428e-94bb-6d23618b5b4f">
+          <AttributeID>S Id</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="b916b8ee-5bb7-4159-949b-8b0d0016ac09">
+      <ID>Countries</ID>
+      <Name>Countries</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="b23f0bcb-bdd3-4c6b-9585-836e2313fd59">
+          <ID>Countries Count</ID>
+          <Name>Countries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="1c1a0c0a-aa2b-40e4-9e33-bca39f90e58b">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="11efd5af-63eb-4fdb-b83a-2b64574e9c01">
+              <TableID>dbo_Countries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="23d7f5c3-eeab-4524-97b8-0ea6937867a8">
+          <CubeDimensionID>Countries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="64698164-72e1-42cf-b425-2bd3d152237e">
+              <AttributeID>Ctry Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6277b2ab-f438-4e8c-8f6c-13b4d63fd525">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="aad8d1de-634a-4e09-9ecc-d5770ac614ee">
+                    <TableID>dbo_Countries</TableID>
+                    <ColumnID>Ctry_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="70ad026d-1547-4d97-bb75-f91fdf69c0be">
+          <CubeDimensionID>Species</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="03e779e2-6978-4565-85eb-99dda5f7935e">
+              <AttributeID>S Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="11d1c73e-4d4e-411b-9346-53f5c6481391">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c7b76701-cb5d-4de1-9e81-63922f8ac58a">
+                    <TableID>dbo_Countries</TableID>
+                    <ColumnID>S_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="8bec4f09-8520-4364-926b-7c12a94dc827">
+          <CubeDimensionID>Countries - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6fdf57c4-a5cc-4c76-beb7-e6d909e7d43f">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Countries</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="9bcf205d-934d-4cb8-ae7f-5662323f691e">
+          <CubeDimensionID>Company - Reg - Ctry</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="18b24786-7455-4a00-8f34-851a41853cff">
+              <AttributeID>Ctry Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="61b66a93-a445-49a8-8370-16f9943ad5aa">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ccc20066-f9b6-4fe1-ba61-8cb5baaec271">
+                    <TableID>dbo_Countries</TableID>
+                    <ColumnID>Ctry_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="817c5c8f-c0d4-4d6b-9598-47571afd89d5">
+          <CubeDimensionID>Region - Ctry</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="90b9de1b-578a-4dcf-8ccb-e93033f73eda">
+              <AttributeID>Ctry Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0a61c62e-a7b0-44ee-9629-a42119bb8e80">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5c44cdf3-736d-445b-990a-46e5f2a8f2a5">
+                    <TableID>dbo_Countries</TableID>
+                    <ColumnID>Ctry_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="9c81a8cc-a532-48c4-95df-2bdb8a4532fd">
+          <CubeDimensionID>Farm - Cmpny - Reg - Ctry</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d040d7ea-cf47-4e25-80e3-3c5f879ddadb">
+              <AttributeID>Ctry Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c068d685-10f9-4e69-a684-46dfc71a7bdd">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="88bf1d3a-4e11-4468-ba9c-1753447c8357">
+                    <TableID>dbo_Countries</TableID>
+                    <ColumnID>Ctry_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="1104319f-ee56-468a-938a-a7cd2011545f">
+          <CubeDimensionID>Owner - Cmpny - Reg - Ctry</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0feb1b26-643e-48f5-808d-8161fb66e6ba">
+              <AttributeID>Ctry Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6e9ba42c-0a7c-4154-830a-d3563aa0b1c8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8f196bd8-c174-4c8e-af69-1e9605871e73">
+                    <TableID>dbo_Countries</TableID>
+                    <ColumnID>Ctry_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="68afa30b-e865-463b-a157-0d8f46a49651">
+      <ID>Farm</ID>
+      <Name>Farm</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="9aee3939-6e9f-4299-9e7a-254310b338e1">
+          <ID>Farm Count</ID>
+          <Name>Farm Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5f0ab381-9a35-4800-8ff2-aaff9c102217">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="5e7f52a7-a895-4586-86fa-5307f8c5bc93">
+              <TableID>dbo_Farm</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="4c302437-25d4-4bbe-83c6-fc7c5b8ddef6">
+          <CubeDimensionID>Farm</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bd2e7331-545f-4da8-a484-52232756744b">
+              <AttributeID>Farm Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f2117c2e-24ca-42cf-bbaa-1afdb56535ff">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ad1a29fb-4d52-4031-91fa-a850d1791837">
+                    <TableID>dbo_Farm</TableID>
+                    <ColumnID>Farm_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cdbea9fb-8e27-4fbd-8640-92691709eac6">
+          <CubeDimensionID>Company</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="12f3aac0-2252-4b22-9d2f-dc5668e6557c">
+              <AttributeID>Cmpny Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b556c8bb-9db6-498b-8ecc-f446b21d955c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9cd70ecd-9461-4be3-bc1b-4760168a61d4">
+                    <TableID>dbo_Farm</TableID>
+                    <ColumnID>Cmpny_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="67267684-bf23-4b10-bb70-72751d52c7b0">
+          <CubeDimensionID>Company - Reg</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="80817e09-e92b-4ee6-8b52-eed9958ca9de">
+              <AttributeID>Reg Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Company</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Reg Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="08a8bb2f-f8a3-4cb7-9975-24dc7b57804e">
+          <CubeDimensionID>Company - Reg - Ctry</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d242f078-fa94-4ded-8fe4-b2fee9694800">
+              <AttributeID>Ctry Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Company - Reg</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Ctry Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="9de40a41-200a-48ae-be80-ea107a00def5">
+          <CubeDimensionID>Company - Reg - Ctry - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1d50ff6b-bd95-47f8-a73f-43abb3977774">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Company - Reg - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="dfbfc92c-766b-445c-bc85-9384ba18e5a2">
+          <CubeDimensionID>Company - Reg - Ctry - S 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0afc7cda-74c8-4676-be98-b227d14f5ee9">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Company - Reg - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="031d75ca-561f-4ee1-95f3-0c5786f7dabb">
+      <ID>Owner</ID>
+      <Name>Owner</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="7e5d8839-8018-4d78-b097-47432122c094">
+          <ID>Owner Count</ID>
+          <Name>Owner Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f3371302-93be-4e3d-a084-569dde914ff4">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="63deb16d-edd1-4da1-972d-2ed5df5652ea">
+              <TableID>dbo_Owner</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="49513a89-49d4-4e97-8761-b92574c86903">
+          <CubeDimensionID>Owner</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="441f65cb-06bb-4cbe-b00c-34422ff601bf">
+              <AttributeID>Owner Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7c71128e-d523-4598-aa31-275bf3508adb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="62b97757-ccf2-4e5f-b6c8-b876bbc772d5">
+                    <TableID>dbo_Owner</TableID>
+                    <ColumnID>Owner_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="df82bd4f-029c-4e8d-8579-a39d59677108">
+          <CubeDimensionID>Company</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2371da1e-52eb-4d92-af9b-1bdbf48ebd21">
+              <AttributeID>Cmpny Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5e86aa2b-f7c0-49e2-a888-224449d6a661">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="534714c1-161c-4e5c-ae58-6c8719595d18">
+                    <TableID>dbo_Owner</TableID>
+                    <ColumnID>Cmpny_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="760d94e6-6f92-4bc4-8379-6d9d0eda6264">
+          <CubeDimensionID>Farm</CubeDimensionID>
+          <MeasureGroupID>Farm</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="80472e6e-c763-4860-be49-f51786847566">
+          <CubeDimensionID>Company - Reg</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c4a6036f-4895-4079-a745-3f28cea23903">
+              <AttributeID>Reg Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Company</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Reg Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="7de1bab9-76f8-423c-a3bf-b72c9e5a44f3">
+          <CubeDimensionID>Company - Reg - Ctry</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="19880d7f-4de4-4ab9-b738-d4a1185220da">
+              <AttributeID>Ctry Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Company - Reg</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Ctry Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="6334b576-647e-433d-9193-67506930191f">
+          <CubeDimensionID>Company - Reg - Ctry - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a0b77109-d2e3-4701-92a8-fa1b808c7cc4">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Company - Reg - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="8c532c6f-acc9-4559-95f2-3298607c37d6">
+          <CubeDimensionID>Company - Reg - Ctry - S 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="adbabd9e-3699-4248-99cf-71abb587a2a6">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Company - Reg - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="e9005d10-3794-40bc-9eb6-4b9000264dc6">
+      <ID>Region</ID>
+      <Name>Region</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="75cfbcb1-1ce0-4fe1-a8cd-b5c4a108d41c">
+          <ID>Altitude</ID>
+          <Name>Altitude</Name>
+          <Source dwd:design-time-name="694a3930-1f3c-4910-b0d1-af6140a7fe93">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ad1444a6-dccb-42d7-bc81-735dabad6ec4">
+              <TableID>dbo_Region</TableID>
+              <ColumnID>Altitude</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="6495dcfa-a498-4502-8632-7ab8d1724bf9">
+          <ID>Altitude Low Meters</ID>
+          <Name>Altitude Low Meters</Name>
+          <Source dwd:design-time-name="717b3ccb-ec8c-437d-a436-c0bd862b1787">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="5f39da7e-94cd-4649-a39a-8c7fdfb744b0">
+              <TableID>dbo_Region</TableID>
+              <ColumnID>Altitude_low_meters</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1e572dd1-5372-41fd-8d4f-2b1fca3edf74">
+          <ID>Altitude High Meters</ID>
+          <Name>Altitude High Meters</Name>
+          <Source dwd:design-time-name="9b4b7cdc-98ac-44a6-b6fd-68bf4cab057d">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ba8d9d1a-d647-48a9-a2cd-984637f675d1">
+              <TableID>dbo_Region</TableID>
+              <ColumnID>Altitude_high_meters</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c0140693-b57d-48f6-944f-88676c2dc021">
+          <ID>Altitude Mean Meters</ID>
+          <Name>Altitude Mean Meters</Name>
+          <Source dwd:design-time-name="8e85ac2d-8528-40c5-a2ed-9a587141a1de">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="437c7428-438a-45fe-a10a-7df016bf7fbc">
+              <TableID>dbo_Region</TableID>
+              <ColumnID>Altitude_mean_meters</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="48444245-bba3-4fcc-841a-2cc0d66212f2">
+          <ID>Region Count</ID>
+          <Name>Region Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9a0d84cb-73b5-4328-8cb5-fea9abe48bd7">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f2664ad7-8090-4784-98ee-60369f145728">
+              <TableID>dbo_Region</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="d2db5510-3132-4807-831e-dc33789423ae">
+          <CubeDimensionID>Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="41dd3ced-fced-49ba-a4a3-5406e1fd83fc">
+              <AttributeID>Reg Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f3f23b23-3553-40b1-8719-817033ec0eff">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fd362dcb-14f3-4c7f-a1da-41f2b3764705">
+                    <TableID>dbo_Region</TableID>
+                    <ColumnID>Reg_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e7b1bc8f-3291-4655-973f-f7a87a980fc8">
+          <CubeDimensionID>Countries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2a7f1eda-f09c-4049-a671-79c4caebdf4d">
+              <AttributeID>Ctry Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="20954bb4-6b3c-4d7a-827f-d78df52e0fa6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9647f018-ee50-45ea-8263-ead035bf9f51">
+                    <TableID>dbo_Region</TableID>
+                    <ColumnID>Ctry_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="90420ac9-19da-4581-93b8-504dea6ed9e8">
+          <CubeDimensionID>Species</CubeDimensionID>
+          <MeasureGroupID>Countries</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="0805b4f8-d321-41f9-b75d-9b08c935bb6b">
+          <CubeDimensionID>Countries - S 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8061cadc-1d6f-4aea-9b98-d021d7da8c75">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Countries</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="d79fc5a7-d6d2-448e-a878-28b4c4a269a3">
+          <CubeDimensionID>Countries - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3fcada2d-c4aa-4255-b659-cb7b61a56f70">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Countries</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="535a9baf-14fa-4978-9280-5486fdb2f4a8">
+          <CubeDimensionID>Company - Reg</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="55b136f2-0599-41b0-8034-aa1f9ccede29">
+              <AttributeID>Reg Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="23fe0664-6bd6-47df-96e5-0145650051fe">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="227f2b14-342b-4418-b2ff-798e1a5e3afb">
+                    <TableID>dbo_Region</TableID>
+                    <ColumnID>Reg_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7e3854d8-76f0-4462-a542-ac737d66086c">
+          <CubeDimensionID>Farm - Cmpny - Reg</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ba53eca7-d5eb-4ad1-a133-c2c186eefc94">
+              <AttributeID>Reg Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d7df6ef9-2b41-452e-b170-f656294a78b8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="136417e5-9f1f-4d3a-805a-833a8d40ad30">
+                    <TableID>dbo_Region</TableID>
+                    <ColumnID>Reg_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="f8da8528-fc13-4c6e-bc45-5f71553fc06a">
+          <CubeDimensionID>Owner - Cmpny - Reg</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="27c5dabf-8c87-4bb0-a620-065624b65449">
+              <AttributeID>Reg Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6c197bd7-ed31-402c-8037-3294f418200f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9b2178a4-2921-45e1-8d5f-a9efda7a0180">
+                    <TableID>dbo_Region</TableID>
+                    <ColumnID>Reg_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="eb845deb-f292-4437-a12b-e618cfff4e3d">
+      <ID>Company</ID>
+      <Name>Company</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ac2d65f6-4a9e-428e-bb55-38b2b83432d3">
+          <ID>Company Count</ID>
+          <Name>Company Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="36e8239a-eaf0-4869-8965-cb5d8bb8a600">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="e475afc1-7393-470c-b4f9-318d47ed5d8f">
+              <TableID>dbo_Company</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="41796c9d-6929-4a5f-92a6-f3f9b3cac7ec">
+          <CubeDimensionID>Company</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0bb238f7-9d50-46ca-b3a8-7e44d391cd5d">
+              <AttributeID>Cmpny Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="82b72906-ff4e-43d3-8afd-747bdd41b28f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1beae4ad-1670-4c5b-8403-343f7573bd3a">
+                    <TableID>dbo_Company</TableID>
+                    <ColumnID>Cmpny_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b372dca0-adcd-4ee4-9989-693428d216bb">
+          <CubeDimensionID>Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7396bb05-3dfb-4739-9388-483772758dd3">
+              <AttributeID>Reg Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b38a6326-8353-4cf7-b85e-950b51b6e8f4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7c9237de-7b2c-4230-91da-75baf59a07c7">
+                    <TableID>dbo_Company</TableID>
+                    <ColumnID>Reg_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="0144307b-9d8f-47cd-bcfc-e2f98a460f06">
+          <CubeDimensionID>Farm</CubeDimensionID>
+          <MeasureGroupID>Farm</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a0d90b86-681c-4e45-95eb-4445263560e1">
+          <CubeDimensionID>Region - Ctry</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="600dcaac-b713-449e-a32c-ea0c40d43089">
+              <AttributeID>Ctry Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Region</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Ctry Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="8c19168b-c207-41d1-822b-ce5b51fa6c18">
+          <CubeDimensionID>Region - Ctry - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b0c2b6b7-1087-4039-9164-5cb2f291ca2c">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Region - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="bee8b4d6-837c-4d1e-99e5-c9cb1b478a60">
+          <CubeDimensionID>Region - Ctry - S 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="51eaf5c2-5c06-4f3e-96b5-0cddaeaedce2">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Region - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="0835f169-22ec-4171-b4d0-bb0f5ae2cec2">
+          <CubeDimensionID>Farm - Cmpny</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fc701a73-0f96-4263-bd1b-ed7dcf5de7bf">
+              <AttributeID>Cmpny Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1af2626a-495d-4f74-980d-5088b369d9f6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e57724db-5764-4be1-ac01-25d922c210e2">
+                    <TableID>dbo_Company</TableID>
+                    <ColumnID>Cmpny_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="da068166-edcf-4283-a9a3-671af7a4edac">
+          <CubeDimensionID>Owner - Cmpny</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a13d9dbe-6259-45a4-905d-80aaaaf9c3a1">
+              <AttributeID>Cmpny Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1cdcb398-02a9-48a5-b260-bec699cd0656">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ab61c025-d241-4ec5-a0e3-d1e18102cfcc">
+                    <TableID>dbo_Company</TableID>
+                    <ColumnID>Cmpny_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="0131d493-b25b-4b61-abcb-d2476ca52eb8">
+      <ID>Characteristics</ID>
+      <Name>Characteristics</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="7a9d8f98-90f1-4d6c-ba6f-b7e9f297c711">
+          <ID>Fragrance Aroma</ID>
+          <Name>Fragrance Aroma</Name>
+          <Source dwd:design-time-name="e7a0dd4b-c69f-4c76-8328-fa60ff0d464b">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9deb0c19-9310-4daf-9676-485ad946cfc9">
+              <TableID>dbo_Characteristics</TableID>
+              <ColumnID>Fragrance...Aroma</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="9410a10b-10b0-4ef6-b4ad-0fda90449651">
+          <ID>Aftertaste</ID>
+          <Name>Aftertaste</Name>
+          <Source dwd:design-time-name="549a0b4d-03fb-497f-a944-7ac9b4b4178a">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b0fc612f-4511-4603-b9a8-ac31e8d746ee">
+              <TableID>dbo_Characteristics</TableID>
+              <ColumnID>Aftertaste</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="8e774d96-d0fb-4809-9cfa-b93ce82f4fe7">
+          <ID>Salt Acid</ID>
+          <Name>Salt Acid</Name>
+          <Source dwd:design-time-name="dde44184-863f-4588-843e-e4feff100c10">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6d2d36d6-4bed-4272-9712-da4bc47388b1">
+              <TableID>dbo_Characteristics</TableID>
+              <ColumnID>Salt...Acid</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5571adb3-32e5-4bed-96e1-b2d2a4ac6a1b">
+          <ID>Bitter Sweet</ID>
+          <Name>Bitter Sweet</Name>
+          <Source dwd:design-time-name="336045e0-3683-464d-9319-283aa2718eb9">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d0a60bbb-5041-4d26-a9d8-528974862414">
+              <TableID>dbo_Characteristics</TableID>
+              <ColumnID>Bitter...Sweet</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d3b0dc63-c107-40e3-a956-9f560f1de355">
+          <ID>Mouthfeel</ID>
+          <Name>Mouthfeel</Name>
+          <Source dwd:design-time-name="de9adb7e-c4a4-446a-8941-515dec5fba47">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="67372dde-f7e4-44c5-aacf-65e65495b55a">
+              <TableID>dbo_Characteristics</TableID>
+              <ColumnID>Mouthfeel</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b5f276a1-55c6-48d7-8c03-26b8b584deb6">
+          <ID>Uniform Cup</ID>
+          <Name>Uniform Cup</Name>
+          <Source dwd:design-time-name="33bac417-9d31-45fd-b568-12ca03d26569">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="b325bff9-eb0c-48fe-9479-247b22156d0f">
+              <TableID>dbo_Characteristics</TableID>
+              <ColumnID>Uniform.Cup</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="7b3f8167-ad2e-449d-b48f-6db2f769e6bc">
+          <ID>Clean Cup</ID>
+          <Name>Clean Cup</Name>
+          <Source dwd:design-time-name="18785165-28dd-4a4f-b2ba-3d8f1cf2b562">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="05359ca4-a9df-403d-adc6-d4d505306fa7">
+              <TableID>dbo_Characteristics</TableID>
+              <ColumnID>Clean.Cup</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="74f6ea7e-003a-4a26-993d-39de89c2caba">
+          <ID>Balance</ID>
+          <Name>Balance</Name>
+          <Source dwd:design-time-name="4b1b724c-b01b-4d48-9c3c-2eeb99b43d00">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ff61d09f-7d73-4db1-b524-67de8bbfcbec">
+              <TableID>dbo_Characteristics</TableID>
+              <ColumnID>Balance</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c9b722f4-e3d9-4357-a233-78eb4805bfa9">
+          <ID>Cupper Points</ID>
+          <Name>Cupper Points</Name>
+          <Source dwd:design-time-name="bfaf2bfb-ecc9-498a-87e0-788e0df6ed3d">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="ad23849b-225a-4378-9cb3-b516e3ce09d1">
+              <TableID>dbo_Characteristics</TableID>
+              <ColumnID>Cupper.Points</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="d8b7326f-ae84-401c-b185-082e8efd905a">
+          <ID>Total Cup Points</ID>
+          <Name>Total Cup Points</Name>
+          <Source dwd:design-time-name="9b17ae38-04b8-453e-b842-89b8c02e6775">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="bd7d062f-b4c4-4266-a7f3-5dd29534cd49">
+              <TableID>dbo_Characteristics</TableID>
+              <ColumnID>Total.Cup.Points</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="f7c29edf-a59a-4362-8164-bbe7a3b96df0">
+          <ID>Moisture</ID>
+          <Name>Moisture</Name>
+          <Source dwd:design-time-name="1aa6215c-3a8b-4a8d-94c6-b85bec2ce7de">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="9de85b8a-ed21-4934-bdae-77fa31d3beb8">
+              <TableID>dbo_Characteristics</TableID>
+              <ColumnID>Moisture</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="eece2bc8-64b4-41a9-a447-8a2068ec3374">
+          <ID>Quakers</ID>
+          <Name>Quakers</Name>
+          <Source dwd:design-time-name="7d11720d-d455-4ae5-bf2d-cb61c09d5b76">
+            <DataType>BigInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="db20b6f3-9ec4-49c0-b2de-3391f0690e6f">
+              <TableID>dbo_Characteristics</TableID>
+              <ColumnID>Quakers</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="abf2a5cb-df26-4cb0-a9de-305d8e9399fd">
+          <ID>Characteristics Count</ID>
+          <Name>Characteristics Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="cdf26ec8-1244-47b0-af65-a4b1e692f776">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="c56aee32-7255-4d7d-827a-3dfc6d8e956f">
+              <TableID>dbo_Characteristics</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8fb07e8d-9801-43f2-9c29-cc783f11a230">
+          <CubeDimensionID>Region</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="65f4c89f-c09f-46f5-b655-e3298b920199">
+              <AttributeID>Reg Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3e509960-1e5c-4a4e-9a32-2641eecaf731">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f83aba68-4e3e-4ef1-8370-b03957664427">
+                    <TableID>dbo_Characteristics</TableID>
+                    <ColumnID>Reg_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="9b6ab856-f9f0-4d4d-ad3b-7144459498f1">
+          <CubeDimensionID>Company</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ff907c94-728d-41d8-8db6-0e6ecf03b720">
+              <AttributeID>Cmpny Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2559543a-0267-4b6f-98bb-cd073a6e97e6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7e2da9fd-0f4f-4798-810c-a6dd0e86fcb9">
+                    <TableID>dbo_Characteristics</TableID>
+                    <ColumnID>Cmpny_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f19f48b8-df4a-483f-bb02-70a57cdaaeb7">
+          <CubeDimensionID>Countries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="973e198b-870f-4198-83e7-661bf345542b">
+              <AttributeID>Ctry Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ba940069-0f79-48e7-81e8-d12c1b5864c2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="dbc72849-7715-4c45-bfc3-078de570553d">
+                    <TableID>dbo_Characteristics</TableID>
+                    <ColumnID>Ctry_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="15d3a383-a0c7-45d2-8322-cc1d90256fce">
+          <CubeDimensionID>Farm</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8e1aeef0-1718-410a-be40-451542b7999d">
+              <AttributeID>Farm Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8b2ef56a-fef5-4c47-8dc8-60cd2b27436f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9c09824b-5b5b-4699-a9f8-a5d860bcda6b">
+                    <TableID>dbo_Characteristics</TableID>
+                    <ColumnID>Farm_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="7bd83c2e-55fe-4659-a5ab-4319c1777a0b">
+          <CubeDimensionID>Owner</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="038a559d-6418-432f-81a4-f3148c87193f">
+              <AttributeID>Owner Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e3d1cf80-4eef-406c-b4b7-0ca0544fb0c1">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d9974690-ae30-4c65-acc1-aea2e4fb40fe">
+                    <TableID>dbo_Characteristics</TableID>
+                    <ColumnID>Owner_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a015ec87-2fcb-4199-821c-6fa55beb94e7">
+          <CubeDimensionID>Species</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cc71cf9b-76f7-42a1-a3bf-b5f8da4bfc46">
+              <AttributeID>S Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f33107dc-0f1d-41b9-815c-7ec908c2ef74">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="77d33e7c-1808-4a3a-929d-7798385f72e1">
+                    <TableID>dbo_Characteristics</TableID>
+                    <ColumnID>S_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="6a54ea2c-ea34-4a50-9833-d8c1856dff1a">
+          <CubeDimensionID>Region - Ctry</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="771c3234-2595-41bc-bcea-89a8c6c5bfbc">
+              <AttributeID>Ctry Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Region</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Ctry Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="0d6d2f2e-399a-4e0b-b9bd-d11994f6c3d5">
+          <CubeDimensionID>Region - Ctry - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4eff7fe9-e450-4b4d-be36-5354556af494">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Region - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="81b055b8-750d-4ca8-a228-efb92ec1b68e">
+          <CubeDimensionID>Region - Ctry - S 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3f03cce5-c30e-4116-8e1b-75abe1cab336">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Region - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a2c96489-dc7e-4e59-8715-cb083e175c1e">
+          <CubeDimensionID>Company - Reg</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3a1a5bd6-a4e7-4a77-a25c-ac132ecc7183">
+              <AttributeID>Reg Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Company</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Reg Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="ccaf44d2-9318-4edc-8360-f883369c2665">
+          <CubeDimensionID>Company - Reg - Ctry</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6fe0cb3b-17c7-479e-8036-af701e029661">
+              <AttributeID>Ctry Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Company - Reg</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Ctry Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="0098688b-872a-4638-bc4b-bf2c56812080">
+          <CubeDimensionID>Company - Reg - Ctry - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e0dbdd26-72f4-4d77-b9d6-10d1fe8edd7b">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Company - Reg - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="084e3d60-d33e-41b6-9f28-cb9f10e26be3">
+          <CubeDimensionID>Company - Reg - Ctry - S 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ed9ceb34-ef5e-420c-bb17-3cfe45df9fca">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Company - Reg - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="6094bbd8-099c-446a-ab7b-3d862c373410">
+          <CubeDimensionID>Countries - S 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e38d75b7-d682-4073-9594-15d9d0435794">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Countries</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="5913f32d-4967-492a-ba06-99472f8496c8">
+          <CubeDimensionID>Countries - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b40d2238-69dc-4086-a4c1-6b1c18d1158f">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Countries</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="411f1613-432d-438c-bae1-276bafd4f1ae">
+          <CubeDimensionID>Farm - Cmpny</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1f298e39-8e51-47a5-aa3f-569c2304ec25">
+              <AttributeID>Cmpny Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Farm</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Cmpny Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="8c153140-eed4-4f79-b409-6c30d17610eb">
+          <CubeDimensionID>Farm - Cmpny - Reg</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="579f6fbe-61e0-41c0-94e4-6c98e015651e">
+              <AttributeID>Reg Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Farm - Cmpny</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Reg Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="7885fa41-211b-4224-a312-c983cc22c8e6">
+          <CubeDimensionID>Farm - Cmpny - Reg - Ctry</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="88685978-a18a-4695-b4e3-2638fe1c3c20">
+              <AttributeID>Ctry Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Farm - Cmpny - Reg</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Ctry Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a7dcb7d2-f912-41b8-910e-c1d3d495c71c">
+          <CubeDimensionID>Farm - Cmpny - Reg - Ctry - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9670078b-9932-4c44-a794-1cc170fb7c7d">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Farm - Cmpny - Reg - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="94e78a8d-feea-45a9-821f-48301bd4192c">
+          <CubeDimensionID>Farm - Cmpny - Reg - Ctry - S 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8663ea1e-a862-430c-8882-5adacf071cef">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Farm - Cmpny - Reg - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="232d71cd-f541-46f9-b669-3a37d33b73d3">
+          <CubeDimensionID>Owner - Cmpny</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ccf8eb95-bd4e-4ee7-aa35-f84c00f387da">
+              <AttributeID>Cmpny Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Owner</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Cmpny Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="eeefa5cc-1d5f-452a-8eda-258e890fa480">
+          <CubeDimensionID>Owner - Cmpny - Reg</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a025af92-9ca7-45ec-9692-3aceb55241f2">
+              <AttributeID>Reg Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Owner - Cmpny</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Reg Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="3890a59c-24b4-433b-9d30-b3e31b2f2037">
+          <CubeDimensionID>Owner - Cmpny - Reg - Ctry</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="da2f65bb-f577-4c51-9ff7-8d65400d6097">
+              <AttributeID>Ctry Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Owner - Cmpny - Reg</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Ctry Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="97b1c7c2-4a73-4fba-809c-970e922a3a0b">
+          <CubeDimensionID>Owner - Cmpny - Reg - Ctry - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9f704a5d-523f-4b39-b70f-45599250f34a">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Owner - Cmpny - Reg - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="949a310c-ff4f-4f3d-b818-49f2a87d5218">
+          <CubeDimensionID>Owner - Cmpny - Reg - Ctry - S 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="149f20ef-b71d-485a-8db9-c41d41f0be08">
+              <AttributeID>S Id</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Owner - Cmpny - Reg - Ctry</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>S Id</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="3606ce89-4358-4938-836b-b3b4ed5119ed">
+      <ID>Species</ID>
+      <Name>Species</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="7f15010d-6b39-4764-b9f9-aaf8912a9740">
+          <ID>Species Count</ID>
+          <Name>Species Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f23b6cbd-0f4d-4fdc-b6df-42ed8306a393">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="d9aadb4a-11c4-416a-ba4a-2c2be21165ba">
+              <TableID>dbo_Species</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="724e4cec-ee06-401b-8160-fa4c174af066">
+          <CubeDimensionID>Species</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9ef63abe-cbae-4a74-8493-1971062af29f">
+              <AttributeID>S Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="26e8938f-26db-446b-b45f-6deb6a072bb5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0cd6e9d2-dec2-4a0c-863c-6548480cb979">
+                    <TableID>dbo_Species</TableID>
+                    <ColumnID>S_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1ccad81f-0908-4f83-a194-fca4b44027ae">
+          <CubeDimensionID>Species 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ac2c47d4-1195-4a2e-a33b-3ff8f00aab40">
+              <AttributeID>S Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d39442f8-4ed4-4ad4-9249-ec7bbe038f63">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="df2fcf21-90d3-45f1-84c5-3b1d8997fd8e">
+                    <TableID>dbo_Species</TableID>
+                    <ColumnID>S_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="2d8d787f-6321-4904-bb97-f9f574767c9b">
+          <CubeDimensionID>Countries</CubeDimensionID>
+          <MeasureGroupID>Countries</MeasureGroupID>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="b6890ea3-439c-42a8-8f1c-42d51df4994a">
+          <CubeDimensionID>Company - Reg - Ctry - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0b0f8c1b-4bfe-402e-a88f-3cad19835382">
+              <AttributeID>S Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="88bc06c7-f4a5-42c4-846c-1ab906a1535c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8048c00f-4eab-47c1-b34f-ae61094ccfb2">
+                    <TableID>dbo_Species</TableID>
+                    <ColumnID>S_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="197e9bce-96d4-41cf-9a2f-0b04eecbe418">
+          <CubeDimensionID>Countries - S 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b5f16b88-3557-4f41-a51d-58db7ecaf6f4">
+              <AttributeID>S Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="3cea189f-ca7b-4cb9-8942-25da51f8365b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fe9870fd-df92-458a-b598-0308040d59d1">
+                    <TableID>dbo_Species</TableID>
+                    <ColumnID>S_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="23b3046d-152e-4e84-adfc-9cf33e75b026">
+          <CubeDimensionID>Region - Ctry - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="74277276-593e-404c-a5ce-739496f142e4">
+              <AttributeID>S Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bd871218-3593-443e-ae2d-33a91009f325">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6be9dc08-8bb5-4850-a12c-f686e6a82937">
+                    <TableID>dbo_Species</TableID>
+                    <ColumnID>S_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="997f4525-353f-45ec-b7b7-02683d6fed8c">
+          <CubeDimensionID>Farm - Cmpny - Reg - Ctry - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7eaf484f-6c61-43d2-afdf-1c8cb573f451">
+              <AttributeID>S Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a270711e-2ec7-4383-a636-79cf6b6ec290">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c85e51a9-dd5d-424b-a936-64d6e8a834c5">
+                    <TableID>dbo_Species</TableID>
+                    <ColumnID>S_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="5f88a401-cedd-4908-8b0b-40aa8804c3d9">
+          <CubeDimensionID>Owner - Cmpny - Reg - Ctry - S</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7cc48ed0-d282-41e4-b3e0-72c1782fc1f3">
+              <AttributeID>S Id</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2b70970a-14d9-4340-9652-b1be3125b515">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c794368f-3ed3-4075-acf6-0d2e947d386e">
+                    <TableID>dbo_Species</TableID>
+                    <ColumnID>S_Id</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="9dbf7870-c147-44fb-ad8e-0459c4fdc55b">
+    <DataSourceViewID>COFFEE</DataSourceViewID>
+  </Source>
+</Cube>
