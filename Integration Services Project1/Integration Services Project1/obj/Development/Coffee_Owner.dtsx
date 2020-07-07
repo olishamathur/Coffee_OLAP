@@ -1,0 +1,826 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/7/2020 3:51:16 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-4QFNL6J"
+  DTS:CreatorName="DESKTOP-4QFNL6J\DELL"
+  DTS:DTSID="{33FF02BE-493C-4941-B8DA-253A58E8C321}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.123"
+  DTS:LocaleID="16393"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{20FBA5C2-E2F0-4091-A96B-C93BF05F270B}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{DDA69944-A97E-498A-B522-60254E6110F3}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Dest_Owner"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Dest_Owner"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Owner]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Dest_Owner.Connections[OleDbConnection]"
+                  connectionManagerID="{8F4F1D30-ED36-47C8-8D16-BE38462CC9FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-4QFNL6J.COFFEE]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Dest_Owner.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Dest_Owner.Inputs[OLE DB Destination Input].Columns[Owner]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Owner"
+                      externalMetadataColumnId="Package\Data Flow Task\Dest_Owner.Inputs[OLE DB Destination Input].ExternalColumns[Owner]"
+                      lineageId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].Columns[Owner]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Dest_Owner.Inputs[OLE DB Destination Input].Columns[Cmpny_Id]"
+                      cachedDataType="i4"
+                      cachedName="Cmpny_Id"
+                      externalMetadataColumnId="Package\Data Flow Task\Dest_Owner.Inputs[OLE DB Destination Input].ExternalColumns[Cmpny_Id]"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Cmpny_Id]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Dest_Owner.Inputs[OLE DB Destination Input].ExternalColumns[Owner_Id]"
+                      dataType="i4"
+                      name="Owner_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Dest_Owner.Inputs[OLE DB Destination Input].ExternalColumns[Owner]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Owner" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Dest_Owner.Inputs[OLE DB Destination Input].ExternalColumns[Cmpny_Id]"
+                      dataType="i4"
+                      name="Cmpny_Id" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Dest_Owner.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\Dest_Owner.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Dest_Owner.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Dest_Owner.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Dest_Owner.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Dest_Owner.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Company]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Company]) [refTable]
+where [refTable].[Company] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Cmpny_Id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Company" dataType="DT_STR" length="50" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Reg_Id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="In_Country Partner" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="ICO_Number" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].Columns[Company]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="{8F4F1D30-ED36-47C8-8D16-BE38462CC9FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-4QFNL6J.COFFEE]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[Company]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Company"
+                      lineageId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].Columns[Company]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Company</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="IgnoreFailure"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Cmpny_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Cmpny_Id]"
+                      name="Cmpny_Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Cmpny_Id</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Src_Coffee_DWH"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Src_Coffee_DWH"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Coffee_DW]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Src_Coffee_DWH.Connections[OleDbConnection]"
+                  connectionManagerID="{8F4F1D30-ED36-47C8-8D16-BE38462CC9FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-4QFNL6J.COFFEE]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].Columns[Owner]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Owner]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].Columns[Owner]"
+                      name="Owner"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].Columns[Company]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Company]"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].Columns[Company]"
+                      name="Company"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Species]"
+                      dataType="wstr"
+                      length="100"
+                      name="Species" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Owner]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Owner" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Country_Origin]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country_Origin" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Farm_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Farm_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Lot_Number]"
+                      dataType="wstr"
+                      length="100"
+                      name="Lot_Number" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Mill]"
+                      dataType="wstr"
+                      length="100"
+                      name="Mill" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[ICO_Number]"
+                      dataType="wstr"
+                      length="100"
+                      name="ICO_Number" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Company" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Altitude]"
+                      dataType="numeric"
+                      name="Altitude"
+                      precision="18" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Region" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Producer]"
+                      dataType="wstr"
+                      length="100"
+                      name="Producer" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[No_Bags]"
+                      dataType="numeric"
+                      name="No_Bags"
+                      precision="18" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Bag_Weight]"
+                      dataType="nText"
+                      name="Bag_Weight" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[In_Country_Partner]"
+                      dataType="wstr"
+                      length="100"
+                      name="In_Country_Partner" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Harvest_Year]"
+                      dataType="dbTimeStamp"
+                      name="Harvest_Year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Grading_Date]"
+                      dataType="dbTimeStamp"
+                      name="Grading_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Owner_1]"
+                      dataType="wstr"
+                      length="100"
+                      name="Owner_1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Variety]"
+                      dataType="wstr"
+                      length="100"
+                      name="Variety" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Processing_Method]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Processing_Method" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Fragrance_Aroma]"
+                      dataType="r8"
+                      name="Fragrance_Aroma" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Flavor]"
+                      dataType="r8"
+                      name="Flavor" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Aftertaste]"
+                      dataType="r8"
+                      name="Aftertaste" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Salt_Acidic]"
+                      dataType="r8"
+                      name="Salt_Acidic" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Bitter_Sweet]"
+                      dataType="r8"
+                      name="Bitter_Sweet" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Mouthfeel]"
+                      dataType="r8"
+                      name="Mouthfeel" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[UniformCup]"
+                      dataType="r8"
+                      name="UniformCup" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[CleanCup]"
+                      dataType="r8"
+                      name="CleanCup" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Balance]"
+                      dataType="r8"
+                      name="Balance" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Cupper_Points]"
+                      dataType="r8"
+                      name="Cupper_Points" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Total_Cup_Points]"
+                      dataType="r8"
+                      name="Total_Cup_Points" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Moisture]"
+                      dataType="r8"
+                      name="Moisture" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Defects_Cat1]"
+                      dataType="r8"
+                      name="Defects_Cat1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Quakers]"
+                      dataType="r8"
+                      name="Quakers" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Color]"
+                      dataType="r8"
+                      name="Color" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Defects_Cat2]"
+                      dataType="r8"
+                      name="Defects_Cat2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Expiration]"
+                      dataType="dbTimeStamp"
+                      name="Expiration" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Certification_Body]"
+                      dataType="wstr"
+                      length="100"
+                      name="Certification_Body" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Certification_Address]"
+                      dataType="wstr"
+                      length="100"
+                      name="Certification_Address" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Certification_Contact]"
+                      dataType="wstr"
+                      length="100"
+                      name="Certification_Contact" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Unit_Measurement]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Unit_Measurement" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Altitude_Low]"
+                      dataType="numeric"
+                      name="Altitude_Low"
+                      precision="18" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Altitude_HIgh]"
+                      dataType="numeric"
+                      name="Altitude_HIgh"
+                      precision="18" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Altitude_Mean]"
+                      dataType="numeric"
+                      name="Altitude_Mean"
+                      precision="18" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[Owner]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[Owner]"
+                      name="Owner" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[Company]"
+                      name="Company" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Lookup Match Output]"
+              endId="Package\Data Flow Task\Dest_Owner.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="5.5,5.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task\Src_Coffee_DWH"
+          TopLeft="211,31" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\Data Flow Task\Dest_Owner"
+          TopLeft="599,191" />
+        <NodeLayout
+          Size="113,42"
+          Id="Package\Data Flow Task\Lookup"
+          TopLeft="507,39" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="371,52">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="136,8"
+              Start="0,0"
+              End="128.5,8">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="64,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="64,0"
+                    Point2="68,0"
+                    Point3="68,4" />
+                  <mssgle:LineSegment
+                    End="68,4" />
+                  <mssgle:CubicBezierSegment
+                    Point1="68,4"
+                    Point2="68,8"
+                    Point3="72,8" />
+                  <mssgle:LineSegment
+                    End="128.5,8" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
+          TopLeft="563.5,81">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="104,110"
+              Start="0,0"
+              End="104,102.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,51"
+                    Point2="0,55"
+                    Point3="4,55" />
+                  <mssgle:LineSegment
+                    End="100,55" />
+                  <mssgle:CubicBezierSegment
+                    Point1="100,55"
+                    Point2="104,55"
+                    Point3="104,59" />
+                  <mssgle:LineSegment
+                    End="104,102.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="3.80861328125,60,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Dest_Owner">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Src_Coffee_DWH">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Company]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

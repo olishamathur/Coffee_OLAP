@@ -1,0 +1,1828 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/6/2020 4:09:07 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-4QFNL6J"
+  DTS:CreatorName="DESKTOP-4QFNL6J\DELL"
+  DTS:DTSID="{BF5ECB12-FBE5-403E-ABE3-818EAEC5136A}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.123"
+  DTS:LocaleID="16393"
+  DTS:ObjectName="COffee_Species"
+  DTS:PackageType="5"
+  DTS:VersionBuild="13"
+  DTS:VersionGUID="{3D13DD46-B655-4D9B-A559-12F3461F7BCE}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-4QFNL6J.COFFEE 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7A09D4AD-0F65-43F4-8B6E-7106165E1116}"
+      DTS:ObjectName="DESKTOP-4QFNL6J.COFFEE 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-4QFNL6J;Initial Catalog=COFFEE;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-4QFNL6J.COFFEE 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{88C93E00-630C-4B21-A141-D90EEA685738}"
+      DTS:ObjectName="DESKTOP-4QFNL6J.COFFEE 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-4QFNL6J;Initial Catalog=COFFEE;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6BBF1530-BB12-41E2-8E74-85B7B600ED52}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\DELL\Desktop\Source_Data.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;"
+              DTS:DTSID="{F3ACD210-DE50-4EB8-9F11-F6B3260842DD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Species&quot;"
+              DTS:DTSID="{C755E4A8-8C09-4226-83E4-1B5B597C9E1C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Owner&quot;"
+              DTS:DTSID="{DC8E19C7-4957-4E19-B101-51E22F50F99B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Country of Origin&quot;"
+              DTS:DTSID="{22E49730-C6F6-4D83-9101-DB72AD2B2529}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Farm Name&quot;"
+              DTS:DTSID="{A1E8AEAB-8470-47EA-A891-4EF96406FB3B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Lot Number&quot;"
+              DTS:DTSID="{15C5FA65-1065-4FB9-A553-21250F490086}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Mill&quot;"
+              DTS:DTSID="{B1940E2B-5FEA-44ED-9668-331AEAE2BAA7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;ICO Number&quot;"
+              DTS:DTSID="{2197BA72-10A9-45AB-A932-902ADEDD05EE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Company&quot;"
+              DTS:DTSID="{28E5E802-6F73-4045-BAEF-3E0C0DC69406}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Altitude&quot;"
+              DTS:DTSID="{4A833D6C-C2AF-4FEF-B34A-9A637A2920FD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Region&quot;"
+              DTS:DTSID="{B3F97F3C-2FA8-4157-8042-D6D1F3EE2383}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Producer&quot;"
+              DTS:DTSID="{88D33A0F-9D1B-4FA8-A041-6520928A1F57}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Number of Bags&quot;"
+              DTS:DTSID="{8DC0C82B-3228-49F8-9FFF-5FFD873F9ED4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Bag Weight&quot;"
+              DTS:DTSID="{CE98ECF3-5584-493D-B8A2-BFFBBEC9B7A3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;In Country Partner&quot;"
+              DTS:DTSID="{30B5A76E-ACF5-4D5A-9685-DC8A1C98DA2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Harvest Year&quot;"
+              DTS:DTSID="{A0CFCE13-6242-4511-B4D7-BFE5049EC0B3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Grading Date&quot;"
+              DTS:DTSID="{5CAF23DB-1BD2-4F31-A440-0A0683D1D43E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Owner 1&quot;"
+              DTS:DTSID="{8FCBBE6F-21D2-4B6F-B399-0B6AE5FFB8B8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Variety&quot;"
+              DTS:DTSID="{9275A44C-920E-4E90-942C-FE8188E47A2B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Processing Method&quot;"
+              DTS:DTSID="{7F3F7B1E-0A38-49CB-805A-DCE0E0F2B09B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Fragrance   Aroma&quot;"
+              DTS:DTSID="{52A63F5C-A699-453D-A540-E5A158AD5EC2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Flavor&quot;"
+              DTS:DTSID="{B6B71E49-8829-4AA3-AB2E-DFCBA885569F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Aftertaste&quot;"
+              DTS:DTSID="{5DDE3A22-A43E-40DB-B385-20B1E25B13B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Salt   Acid&quot;"
+              DTS:DTSID="{65F972A7-4004-4015-B4D1-E0BA8B73BD29}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Bitter   Sweet&quot;"
+              DTS:DTSID="{F7BD4C55-8DF0-41FA-B1BD-D5EC7FE0F770}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Mouthfeel&quot;"
+              DTS:DTSID="{A3DC8B3A-9556-40C2-8F49-BAE493CFC33A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Uniform Cup&quot;"
+              DTS:DTSID="{BBB11BF2-BBF9-4807-8040-364C251663F1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Clean Cup&quot;"
+              DTS:DTSID="{D0CD6D44-EDB9-49A8-8A06-318CEC8F6D2D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Balance&quot;"
+              DTS:DTSID="{0F1F2364-20B8-4912-916E-711EF00B1F15}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Cupper Points&quot;"
+              DTS:DTSID="{333EE7FA-8376-44E5-BD60-B4B01E4EF3D4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Total Cup Points&quot;"
+              DTS:DTSID="{9F54A8E6-A976-4C40-803A-A87136F6305E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Moisture&quot;"
+              DTS:DTSID="{0D4D5574-847E-4881-A97A-0FC7B8097EF7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Category One Defects&quot;"
+              DTS:DTSID="{98E346ED-27F6-4C3E-8DF3-228D583E46AA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Quakers&quot;"
+              DTS:DTSID="{D90CFC33-B215-4C41-9288-2C6406B7A6E3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Color&quot;"
+              DTS:DTSID="{DC2C1AE5-BDEF-479A-A3D0-8D764D255E62}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Category Two Defects&quot;"
+              DTS:DTSID="{3E6048ED-31E8-43DD-835F-58FD65693588}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Expiration&quot;"
+              DTS:DTSID="{B95BCB2C-8B7D-488E-8C51-D69827ACA4DB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Certification Body&quot;"
+              DTS:DTSID="{0FEAD6A9-D904-4CB8-8C35-35367200A408}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Certification Address&quot;"
+              DTS:DTSID="{66779889-FD5E-4529-9B6E-3A24F3E87EAD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;Certification Contact&quot;"
+              DTS:DTSID="{717E7368-F10D-4DF7-9C99-A30FC1B6EA5D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;unit_of_measurement&quot;"
+              DTS:DTSID="{B1FC4925-5EFF-4434-A192-D6C68FCAAAF2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;altitude_low_meters&quot;"
+              DTS:DTSID="{2824EC1E-ACCF-41EE-9D27-74BC8EF1055E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;altitude_high_meters&quot;"
+              DTS:DTSID="{4614C280-4075-4751-A4AD-995DD0CA1C93}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;altitude_mean_meters&quot;"
+              DTS:DTSID="{4FE93265-27E8-4C28-8775-991650D3887D}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7792D356-A4F1-4B74-8D2B-3D89606A6403}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\DELL\Desktop\Source_Data.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName=""
+              DTS:DTSID="{B6B8ED89-DB90-4F74-8E6C-F759DFE129B8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="7"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Species"
+              DTS:DTSID="{4447C451-F5D4-4036-9250-861F2B972F6E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="33"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Owner&quot;&quot;"
+              DTS:DTSID="{A0C78581-3F83-4677-9400-B9F9E86F4F4D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="13"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Country of Origin&quot;&quot;"
+              DTS:DTSID="{1B50C38C-F99B-4831-8FED-6926AFC5519C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="34"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Farm Name&quot;&quot;"
+              DTS:DTSID="{A8A5D93A-2E9A-4275-B738-F5BCFD9FFDB4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="8"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Lot Number&quot;&quot;"
+              DTS:DTSID="{459A4200-E3B7-4C13-97D3-8F61240EA5EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="38"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Mill&quot;&quot;"
+              DTS:DTSID="{E6973AB4-1719-47D6-B1F0-58B7F5052EE9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="17"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;ICO Number&quot;&quot;"
+              DTS:DTSID="{38BA5ACB-2FCD-4DF4-BFE8-7A7147D52745}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="33"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Company&quot;&quot;"
+              DTS:DTSID="{6016BD79-663F-4260-A382-83EB300C0669}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Altitude&quot;&quot;"
+              DTS:DTSID="{98F3B5F5-C594-4449-AD41-7C526E3F4692}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="27"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Region&quot;&quot;"
+              DTS:DTSID="{9E747781-19A6-4288-9BB9-425884D72195}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="38"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Producer&quot;&quot;"
+              DTS:DTSID="{824BC140-C72C-4B41-8B1C-293C84BAB78B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Number of Bags&quot;&quot;"
+              DTS:DTSID="{34EBAAED-D8C4-4E17-953B-8CCFA584879E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Bag Weight&quot;&quot;"
+              DTS:DTSID="{CF27728C-13C2-41ED-B113-422201F3C3CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="35"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;In Country Partner&quot;&quot;"
+              DTS:DTSID="{BD1ECC33-85A8-4A63-8471-C43E401E64D3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="28"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Harvest Year&quot;&quot;"
+              DTS:DTSID="{D588BCD5-0AE1-4D4B-805E-2A42437440DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Grading Date&quot;&quot;"
+              DTS:DTSID="{D524333F-51FA-48CA-BFA8-7C7BB9B91EC2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="13"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Owner 1&quot;&quot;"
+              DTS:DTSID="{BEE0412E-2803-4B5D-8044-8FAAED1C003B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="33"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Variety&quot;&quot;"
+              DTS:DTSID="{66CF9561-1C70-4549-8556-6C3220B5EB24}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="13"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Processing Method&quot;&quot;"
+              DTS:DTSID="{33DE722F-A076-4E65-A45C-9B4542F2F0EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="13"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Aroma&quot;&quot;"
+              DTS:DTSID="{3B507987-73B8-439D-8463-AD7ECB990D41}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="13"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Flavor&quot;&quot;"
+              DTS:DTSID="{4935C34B-D3DD-4274-8F2F-0BABD0B90AB3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Aftertaste&quot;&quot;"
+              DTS:DTSID="{498D51BF-D5EC-4044-90E7-479BFD7FC5EB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Acidity&quot;&quot;"
+              DTS:DTSID="{57072F0B-6E2C-4D3B-8787-532A5850502F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Body&quot;&quot;"
+              DTS:DTSID="{BCCB3A0C-2E3D-4722-8C2A-B50DB3AA2DAE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Balance&quot;&quot;"
+              DTS:DTSID="{301A75EC-10FC-4C1A-927C-3894CD916CDC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Uniformity&quot;&quot;"
+              DTS:DTSID="{29706E51-4C6A-43EF-BE22-B138B5750950}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Clean Cup&quot;&quot;"
+              DTS:DTSID="{0578E6D5-94C3-4691-8EF5-ED69D56D4A8B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Sweetness&quot;&quot;"
+              DTS:DTSID="{82CD98DF-B98D-48B2-B736-14864C28EC54}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Cupper Points&quot;&quot;"
+              DTS:DTSID="{833A76F7-3540-40BF-AA9E-171ADE081EFC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Total Cup Points&quot;&quot;"
+              DTS:DTSID="{365C3760-F900-4373-89BB-B705516B9357}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Moisture&quot;&quot;"
+              DTS:DTSID="{FCBC2E72-3558-4FB1-A508-780C2EDBFE44}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Category One Defects&quot;&quot;"
+              DTS:DTSID="{8960725E-1ADF-44A2-B6B4-757C3096BE1B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Quakers&quot;&quot;"
+              DTS:DTSID="{02C3037B-2F0E-4083-AFB2-516A915D9ECB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="16"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Color&quot;&quot;"
+              DTS:DTSID="{90CD7C3A-1586-4DF1-8CF5-6995F1A07FF9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Category Two Defects&quot;&quot;"
+              DTS:DTSID="{D0306C85-4320-45A5-A222-5F256C935524}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Expiration&quot;&quot;"
+              DTS:DTSID="{ABDF2070-35F7-4D7C-A41A-B4CAA5EF09E4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="12"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Certification Body&quot;&quot;"
+              DTS:DTSID="{E8BA366B-B2B1-40C3-B74A-AA089B13BC0C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="13"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Certification Address&quot;&quot;"
+              DTS:DTSID="{3D3D8996-F7C2-4140-92FF-222580365AC9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="35"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;Certification Contact&quot;&quot;"
+              DTS:DTSID="{0A05A380-6F94-4716-9003-0E5CE67056D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;unit_of_measurement&quot;&quot;"
+              DTS:DTSID="{88597284-4700-41AE-8544-3FEEE8EA17F6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;altitude_low_meters&quot;&quot;"
+              DTS:DTSID="{3BB98300-E8FB-4B53-8BB9-EA9944DD59F4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="40"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;altitude_high_meters&quot;&quot;"
+              DTS:DTSID="{E6D2A194-B0F5-4167-8504-429E3019D2EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="&quot;&quot;altitude_mean_meters&quot;&quot;&quot;"
+              DTS:DTSID="{0D4587B9-ED79-4B05-A326-FE376AFCF49B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{84D1E8D7-8BC9-44F4-B9E3-94438793978A}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="16393"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\DELL\Desktop\Source_Data.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column 0"
+              DTS:DTSID="{1AA00CD8-824E-4A9F-9891-1BD110A80029}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Species"
+              DTS:DTSID="{DFED77B8-68EE-4981-A39C-1B65E9687484}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Owner"
+              DTS:DTSID="{6CCFF269-C372-4BF1-94E2-833B302BF1E8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country of Origin"
+              DTS:DTSID="{B7093672-DF0C-48E9-B251-9FDE7D2D71CF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Farm Name"
+              DTS:DTSID="{1CA22EF9-ABFA-4A25-80EB-14A6F42AB4E4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Lot Number"
+              DTS:DTSID="{DE9E4EA9-287B-40E3-9A3A-C5F08A58D2F8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mill"
+              DTS:DTSID="{2C19888A-61D7-44AD-B764-0B32EF4AF001}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ICO Number"
+              DTS:DTSID="{E5CB85A9-919F-43D7-A0C6-B97A1320B802}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Company"
+              DTS:DTSID="{A2E3A2E0-68B7-4E7E-8C24-450A3B173C91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Altitude"
+              DTS:DTSID="{6EF5BA51-1006-460B-9E2E-32FCF400AF7E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Region"
+              DTS:DTSID="{A510FDEB-E9B7-427F-9DF7-79C01C94CCE2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Producer"
+              DTS:DTSID="{C8CCC720-0E0A-4CD3-AB18-B692B37ADABD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Number of Bags"
+              DTS:DTSID="{789B3578-1A47-494F-B977-95BC4C645195}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Bag Weight"
+              DTS:DTSID="{F63ABA87-DD37-4069-AAC5-2893A4B3B0B9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="In Country Partner"
+              DTS:DTSID="{822EF387-89E1-4E47-AEE0-4C5ADE51071A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Harvest Year"
+              DTS:DTSID="{FBB1C800-E5ED-458C-9A0B-8A5B72CEFFA1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Grading Date"
+              DTS:DTSID="{C78AC55B-ADEA-449B-BB5F-6B0EAD945752}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Owner 1"
+              DTS:DTSID="{9ABAA6CD-AD07-415C-868D-AB2B84E3DC01}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Variety"
+              DTS:DTSID="{0C7C83CC-5BFB-429D-969F-10A7D648BDFA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Processing Method"
+              DTS:DTSID="{4774DFB9-1476-4118-89CC-0800754E9184}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Fragrance   Aroma"
+              DTS:DTSID="{6E489F4E-AFBF-4280-B0C8-1D06D168B5D2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Flavor"
+              DTS:DTSID="{0A747BCB-EE58-438C-8E7F-93E10FC8CCF3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Aftertaste"
+              DTS:DTSID="{AB2EE9C4-E985-4D39-867E-E470434173AD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Salt   Acid"
+              DTS:DTSID="{826E07A3-2B64-49D4-BFEC-6DD45F5EC797}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Bitter   Sweet"
+              DTS:DTSID="{F3049E31-59CE-4445-929D-9228CF37C7B2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Mouthfeel"
+              DTS:DTSID="{E1FACB9C-5C3A-4365-A23F-C621E4CF4E00}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Uniform Cup"
+              DTS:DTSID="{76D81FEF-2405-4E62-8ADF-A200E13B378E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Clean Cup"
+              DTS:DTSID="{CDDC7BE6-5897-4AD5-9DB8-6E840A650BDE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Balance"
+              DTS:DTSID="{1AAE55E4-1F23-4522-91D1-07998F2D9137}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Cupper Points"
+              DTS:DTSID="{C5A9D1D3-0A01-42D2-ADF5-A18FD127FD28}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Total Cup Points"
+              DTS:DTSID="{FE3CE66F-134B-4162-930B-C7DAF07E8B30}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Moisture"
+              DTS:DTSID="{6D70FC8C-D70E-429C-ACFD-E1454D752A07}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Category One Defects"
+              DTS:DTSID="{E8516BEE-95F7-4C40-B810-0523FEAB3AA1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Quakers"
+              DTS:DTSID="{E34496AE-4157-4590-9485-3F256230B4C0}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Color"
+              DTS:DTSID="{1049A417-3205-476E-93E7-C85E403EFE35}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Category Two Defects"
+              DTS:DTSID="{185BFD0F-0445-428A-BCF0-5EF45909147E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Expiration"
+              DTS:DTSID="{00884AFC-0F42-4169-864B-61858418E050}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Certification Body"
+              DTS:DTSID="{73E177E0-677E-4CB4-A20A-E4F19878FC34}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Certification Address"
+              DTS:DTSID="{8143BCC6-7021-4BF5-8B56-5BB86135B65B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Certification Contact"
+              DTS:DTSID="{39B2CF93-1129-4D13-979A-440C17A01FAC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="unit_of_measurement"
+              DTS:DTSID="{05617258-1CC9-4AFC-96D7-08F6E06D8EBD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="altitude_low_meters"
+              DTS:DTSID="{F840F666-B10E-45A1-A854-A80B2B5BDD09}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="altitude_high_meters"
+              DTS:DTSID="{62F8E460-9B7B-458B-8C32-351E707219F7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="altitude_mean_meters"
+              DTS:DTSID="{8378A1D7-1971-499A-8996-D27404698853}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{85248739-C4F6-4BC9-80AC-9630F2707DAF}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Dest_Species"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Dest_Species"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Species]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Dest_Species.Connections[OleDbConnection]"
+                  connectionManagerID="{8F4F1D30-ED36-47C8-8D16-BE38462CC9FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-4QFNL6J.COFFEE]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Dest_Species.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Dest_Species.Inputs[OLE DB Destination Input].Columns[Species]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Species"
+                      externalMetadataColumnId="Package\Data Flow Task\Dest_Species.Inputs[OLE DB Destination Input].ExternalColumns[Species]"
+                      lineageId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].Columns[Species]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Dest_Species.Inputs[OLE DB Destination Input].ExternalColumns[S_Id]"
+                      dataType="i4"
+                      name="S_Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Dest_Species.Inputs[OLE DB Destination Input].ExternalColumns[Species]"
+                      dataType="wstr"
+                      length="100"
+                      name="Species" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Dest_Species.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\Dest_Species.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Dest_Species.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Dest_Species.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Dest_Species.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Dest_Species.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Src_Coffee_DWH"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Src_Coffee_DWH"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Coffee_DW]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Src_Coffee_DWH.Connections[OleDbConnection]"
+                  connectionManagerID="{8F4F1D30-ED36-47C8-8D16-BE38462CC9FE}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-4QFNL6J.COFFEE]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].Columns[Species]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Species]"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].Columns[Species]"
+                      name="Species"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Species]"
+                      dataType="wstr"
+                      length="100"
+                      name="Species" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Owner]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Owner" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Country_Origin]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Country_Origin" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Farm_Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Farm_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Lot_Number]"
+                      dataType="wstr"
+                      length="100"
+                      name="Lot_Number" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Mill]"
+                      dataType="wstr"
+                      length="100"
+                      name="Mill" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[ICO_Number]"
+                      dataType="wstr"
+                      length="100"
+                      name="ICO_Number" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Company]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Company" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Altitude]"
+                      dataType="numeric"
+                      name="Altitude"
+                      precision="18" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Region]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Region" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Producer]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Producer" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[No_Bags]"
+                      dataType="numeric"
+                      name="No_Bags"
+                      precision="18" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Bag_Weight]"
+                      dataType="nText"
+                      name="Bag_Weight" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[In_Country_Partner]"
+                      dataType="wstr"
+                      length="100"
+                      name="In_Country_Partner" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Harvest_Year]"
+                      dataType="dbTimeStamp"
+                      name="Harvest_Year" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Grading_Date]"
+                      dataType="dbTimeStamp"
+                      name="Grading_Date" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Owner_1]"
+                      dataType="wstr"
+                      length="100"
+                      name="Owner_1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Variety]"
+                      dataType="wstr"
+                      length="100"
+                      name="Variety" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Processing_Method]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Processing_Method" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Fragrance_Aroma]"
+                      dataType="r8"
+                      name="Fragrance_Aroma" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Flavor]"
+                      dataType="r8"
+                      name="Flavor" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Aftertaste]"
+                      dataType="r8"
+                      name="Aftertaste" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Salt_Acidic]"
+                      dataType="r8"
+                      name="Salt_Acidic" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Bitter_Sweet]"
+                      dataType="r8"
+                      name="Bitter_Sweet" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Mouthfeel]"
+                      dataType="r8"
+                      name="Mouthfeel" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[UniformCup]"
+                      dataType="r8"
+                      name="UniformCup" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[CleanCup]"
+                      dataType="r8"
+                      name="CleanCup" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Balance]"
+                      dataType="r8"
+                      name="Balance" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Cupper_Points]"
+                      dataType="r8"
+                      name="Cupper_Points" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Total_Cup_Points]"
+                      dataType="r8"
+                      name="Total_Cup_Points" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Moisture]"
+                      dataType="r8"
+                      name="Moisture" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Defects_Cat1]"
+                      dataType="r8"
+                      name="Defects_Cat1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Quakers]"
+                      dataType="r8"
+                      name="Quakers" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Color]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Color" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Defects_Cat2]"
+                      dataType="r8"
+                      name="Defects_Cat2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Expiration]"
+                      dataType="dbTimeStamp"
+                      name="Expiration" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Certification_Body]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Certification_Body" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Certification_Address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Certification_Address" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Certification_Contact]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Certification_Contact" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Unit_Measurement]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Unit_Measurement" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Altitude_Low]"
+                      dataType="numeric"
+                      name="Altitude_Low"
+                      precision="18" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Altitude_HIgh]"
+                      dataType="numeric"
+                      name="Altitude_HIgh"
+                      precision="18" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output].ExternalColumns[Altitude_Mean]"
+                      dataType="numeric"
+                      name="Altitude_Mean"
+                      precision="18" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[Species]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Error Output].Columns[Species]"
+                      name="Species" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task\Dest_Species.Inputs[OLE DB Destination Input]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\Src_Coffee_DWH.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="112,59" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Data Flow Task\Dest_Species"
+          TopLeft="420.5,135.5" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Data Flow Task\Src_Coffee_DWH"
+          TopLeft="524,22" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="604,64">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-113,71.5"
+              Start="0,0"
+              End="-113,64">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.75"
+                    Point2="0,35.75"
+                    Point3="-4,35.75" />
+                  <mssgle:LineSegment
+                    End="-109,35.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-109,35.75"
+                    Point2="-113,35.75"
+                    Point3="-113,39.75" />
+                  <mssgle:LineSegment
+                    End="-113,64" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Dest_Species">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Src_Coffee_DWH">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
